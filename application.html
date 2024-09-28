@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 유희림/60221312/기초웹 과제#1 -->
+</head>
+
+<body>
+
+  <header>
+    <h1>✎ <a href="index.html">학생 장학제도</a> </h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html#reason">장학제도의 존재이유</a></li>
+      <li><a href="index.html#kind">장학제도의 종류</a></li>
+      <li><a href="index.html#table1">총정리표</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="#">
+      <fieldset>
+        <legend>신청자 정보</legend>
+
+        <label for="username">이름:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <label for="inputemail">이메일:</label>
+        <input type="email" id="inputemail" name="inputemail">
+        <br>
+        <br>
+        <label for="schooltype">학교:</label>
+        <select name="schooltype" id="schooltype">
+          <option value="elementary">초등학교(신청불가)</option>
+          <option value="middleschool">중학교(신청불가)</option>
+          <option value="highschool">고등학교(서울장학재단 신청 가능)</option>
+          <option value="university">대학교(모든 장학금 신청 가능)</option>
+          <option value="gradschool">대학원(드림클래스 신청 가능)</option>
+        </select>
+        <br><br>
+
+        <label for="schoolname">학교명:</label>
+        <input type="text" id="schoolname" name="schoolname">
+        <br><br>
+        <label for="presentschool">재학 여부:</label>
+        <input type="radio" id="presentschool" name="presentname" value="still" checked>재학
+        <input type="radio" id="presentschool" name="presentname" value="stop">휴학
+        <br><br>
+
+
+        <label for="phone">전화번호:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+
+        <label for="income">소득분위:</label>
+        <select name="income" id="income">
+          <option value="1">1분위</option>
+          <option value="2">2분위</option>
+          <option value="3">3분위</option>
+          <option value="4">4분위</option>
+          <option value="5">5분위</option>
+          <option value="6">6분위</option>
+          <option value="7">7분위</option>
+          <option value="8">8분위</option>
+          <option value="9">9분위</option>
+          <option value="10">10분위</option>
+        </select>
+
+      </fieldset>
+      <fieldset>
+        <legend>신청</legend>
+        <label for="money">재단명</label>
+        <select name="money" id="money">
+          <option value="Miraeasset">미래에셋박현주재단</option>
+          <option value="Dreamclass">드림클래스</option>
+          <option value="Seoul">서울장학재단</option>
+          <option value="Hoguk">호국장학재단</option>
+          <option value="Dooeul">두을장학재단</option>
+        </select>
+        <input type="submit" value="신청하기">
+        <input type="reset">
+      </fieldset>
+    </form>
+  </main>
+
+
+  <footer>
+    <hr>
+    유희림/60221312/기초웹 과제#1
+  </footer>
+
+</body>
+
+</html>

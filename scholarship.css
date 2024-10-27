@@ -1,0 +1,297 @@
+/*유희림/60221312/기초웹 과제#2*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Noto Sans KR;
+
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "aside main"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 15% auto;
+}
+
+header {
+  display: grid;
+  grid-area: header;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 0 0;
+}
+
+nav {
+  /* display:flex;
+  justify-content:space-evenly; */
+  grid-area: nav;
+  background-color: #1C3D5A;
+  padding: 10px;
+  width: 100%
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+nav a:hover {
+  background-color: #575757;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: aside;
+  background-color: rgb(241, 244, 248);
+}
+
+aside a img {
+  width: 200px;
+  height: 300px;
+}
+
+#scholarship {
+  color: white;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/*장학제도의 존재 이유, 종류, 표정리*/
+main h2 {
+  background-color: #4A4A4A;
+  text-align: center;
+  color: lightgray
+}
+
+.inreason {
+  background-color: lightgray;
+  padding: 25px;
+  border: 3px solid #204D8D;
+
+
+
+}
+
+#kind {
+  display: grid;
+  grid-template-areas:
+    "kindTitle kindTitle"
+    "mirae samsung"
+    "seoul hoguk"
+    "dooeul dooeul";
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+#Alltable {}
+
+#kind div {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #F5F5F5;
+
+}
+
+#kind div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+#table2 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#notice {
+  background-color: rgba(245, 245, 103, 0.865);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#noticetitle {
+  margin: 10px auto 30px auto;
+}
+
+#notice h3 {
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+
+  background-color: #36393f;
+  color: white;
+}
+
+main {
+  grid-area: main;
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+
+#reason p {
+  font-size: 18px;
+}
+
+#kindTitle {
+  display: grid;
+  grid-area: kindTitle;
+  justify-content: center;
+  align-items: center;
+}
+
+#Miraeasset {
+  grid-area: mirae;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+#Samsung {
+  grid-area: samsung;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+#Seoul {
+  grid-area: seoul;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+#Hoguk {
+  grid-area: hoguk;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+#Dooeul {
+  grid-area: dooeul;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 30%);
+}
+
+
+
+table,
+th,
+td {
+  border: 1px solid#ccc;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+nav ul a:link {
+  color: white;
+}
+
+nav ul a:visited {
+  color: white;
+}
+
+#Alltable {
+  background-image: url("img/표\ 배경화면.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#table1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+#table2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ff{
+  background-color:rgb(197, 206, 216);
+}
+
+h3[class] {
+  font-size: 20px;
+}
+
+
+input:focus {
+  outline: none;
+  border: 2px solid #4A90E2;
+}
+
+#reason div :first-child{
+  background-color: #8bc028;  
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-areas:
+    "header"
+    "nav"
+    "aside"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+  }
+}

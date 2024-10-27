@@ -4,27 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="scholarship.css">
   <title>Document</title>
-  <!-- 유희림/60221312/기초웹 과제#1 -->
+  <!-- 유희림/60221312/기초웹 과제#2 -->
 </head>
 
 <body>
 
   <header>
-    <h1>✎ <a href="index.html">학생 장학제도</a> </h1>
+    <h1><a href="index.html">✎ 학생 장학제도</a> </h1>
   </header>
+
+  <aside>
+    <a href="application.html"><img src="img/신청하기.png" alt="" width="80"></a>
+  </aside>
 
   <nav>
     <ul>
-      <li><a href="index.html#reason">장학제도의 존재이유</a></li>
-      <li><a href="index.html#kind">장학제도의 종류</a></li>
-      <li><a href="index.html#table1">총정리표</a></li>
+      <li><a href="reason.html">장학제도의 존재이유</a></li>
+      <li><a href="index.html">장학제도의 종류</a></li>
+      <li><a href="table.html">표 정리</a></li>
+      <li><a href="application.html">신청</a></li>
+      <li><a href="notice.html">공지사항</a></li>
     </ul>
   </nav>
 
   <main>
-    <form action="#">
-      <fieldset>
+    <form action="#" id="ff">
+      <fieldset id="inputsomething1">
         <legend>신청자 정보</legend>
 
         <label for="username">이름:</label>
@@ -74,7 +86,7 @@
         </select>
 
       </fieldset>
-      <fieldset>
+      <fieldset id="inputsomething2">
         <legend>신청</legend>
         <label for="money">재단명</label>
         <select name="money" id="money">
@@ -93,7 +105,7 @@
 
   <footer>
     <hr>
-    유희림/60221312/기초웹 과제#1
+    유희림/60221312/기초웹 과제#2
   </footer>
 
 </body>
